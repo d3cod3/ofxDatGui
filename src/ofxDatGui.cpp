@@ -927,9 +927,9 @@ void ofxDatGui::update()
                         }
                     }
                 }   else{
-            // update component but ignore mouse & keyboard events //
-                    items[i]->update(false);
-                    if (items[i]->getFocused()) items[i]->setFocused(false);
+                    // update component
+                    items[i]->update();
+                    //if (items[i]->getFocused()) items[i]->setFocused(false);
                 }
             }
         }
